@@ -1,0 +1,20 @@
+{
+  "name": "micro-son1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel page/color.html --host localhost -p 1234"
+  },
+  "author": "wyz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "parcel": "^1.12.3",
+    "parcel-namer-asset-dir": "^1.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.13"
+  }
+}
