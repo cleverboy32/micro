@@ -41,13 +41,13 @@ class MicroRouter extends HTMLElement {
     const prefix = this.getAttribute("prefix") || '';
     let scripts = (html.match(/<script([\s\S]*?)\/script>/g) || []);
 
-    console.log(scripts, 'scripts')
+    // console.log(scripts, 'scripts')
   
     scripts = scripts.map((item) => item.replace('src="', `src="${prefix}`));
     let frag = document.createRange().createContextualFragment(scripts.join(''));
 
     document.body.appendChild(frag);
-    console.log('scripts inster');
+    // console.log('scripts inster');
   }
 
   parseBody(html) {
@@ -60,7 +60,7 @@ class MicroRouter extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(this, 99);
+    // console.log(this, 99);
   }
 }
 
